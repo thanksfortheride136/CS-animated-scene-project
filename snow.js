@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // Random position and animation duration
         snowflake.style.left = `${Math.random() * 100}vw`;
         snowflake.style.animationDuration = `${Math.random() * 7 + 2}s`; // Between 2s and 5s
-        snowflake.style.fontSize = `${Math.random() * 10 + 10}px`; // Random size between 10px and 20px
+        snowflake.style.fontSize = `${Math.random() * 20 + 10}px`; // Random size between 10px and 20px
 
         // Add the snowflake to the container
         snowContainer.appendChild(snowflake);
@@ -22,5 +22,5 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // Generate snowflakes at intervals
-    setInterval(createSnowflake, 10); // Adjust the interval for more or fewer snowflakes
+    setInterval(createSnowflake, 80); // Adjust the interval for more or fewer snowflakes
 });
